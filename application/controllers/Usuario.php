@@ -36,7 +36,7 @@ class Usuario extends CI_Controller {
 		$this->load->view('menu',$menu);
 		
 		$data['usuario']=$this->UM->getAllUsuarios();
-		$id=$this->SM->getIdModulo('/Usuario');
+		$id=$this->SM->getIdModulo('Usuario');
 		$data['consultar']=$this->SM->getPermiso($id,1);
 		$data['editar']=$this->SM->getPermiso($id,4);
 		$data['agregar']=$this->SM->getPermiso($id,2);

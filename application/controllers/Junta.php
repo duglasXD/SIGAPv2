@@ -23,7 +23,7 @@ date_default_timezone_set('America/El_Salvador');
 			$this->load->view('head');
 			$this->load->view('top_bar');
 			$this->load->view('menu',$menu);
-			$id=$this->SM->getIdModulo('/Junta');
+			$id=$this->SM->getIdModulo('Junta');
 			$data['consultar']=$this->SM->getPermiso($id,1);
 			$data['editar']=$this->SM->getPermiso($id,4);
 			$data['agregar']=$this->SM->getPermiso($id,2);
