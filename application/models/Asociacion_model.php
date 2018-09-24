@@ -112,11 +112,11 @@ class Asociacion_model extends CI_Model {
           
           if($tipo==1)
           {
-            $where = "NOMBRE_CLASE_ASOCIACION LIKE '%PUBLICOS%'";
+            $where = "ID_CLASE_ASOCIACION=6";
           }
           else
           {
-            $where = "NOMBRE_CLASE_ASOCIACION NOT LIKE '%PUBLICOS%'";
+            $where = "ID_CLASE_ASOCIACION<>6";
           }
 
           $this->db->where($where);
